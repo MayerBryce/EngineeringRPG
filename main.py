@@ -1,7 +1,10 @@
 import pygame
-#from pygame.locals import *
+from pygame.locals import *
 import sys
 import random
+import world
+from world import Background
+from world import Ground
 #maybe look into tkinter GUI
 
 pygame.init()
@@ -18,14 +21,6 @@ COUNT = 0
 displaysurface = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Engineering RPG")
 
-class Background(pygame.sprite.Sprite):
-    def __init__(self):
-        super().__init__()
-
-class Ground(pygame.sprite.Sprite):
-    def __init__(self):
-        super().__init__()
-
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
@@ -33,6 +28,9 @@ class Player(pygame.sprite.Sprite):
 class Boss(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
+
+background = Background()
+ground = Ground()
 
 while True:
        
@@ -49,3 +47,8 @@ while True:
         # Event handling for a range of different key presses    
         if event.type == pygame.KEYDOWN:
               pass
+    
+    background.render()
+    ground.render()
+    pygame.display.update()
+    FPS_CLOCK.tick(FPS)
