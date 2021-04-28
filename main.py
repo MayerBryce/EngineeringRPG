@@ -16,9 +16,7 @@ playerName = input()
 
 #PICK YOUR CLASS
 #os.system('clear')
-classMenu()
-#firstMenu() 
-#remove above comment to see the firstMenu function. 
+classMenu() 
 selectionNum = input()
 if selectionNum == '1':
     playerClass = BME()
@@ -31,4 +29,5 @@ if selectionNum == '4':
 if selectionNum == '5':
     playerClass = Mechanical()
 
-firstMenu() #where firstMenu belongs. Cannot print yet because error thrown from classes (line 23-32)
+#FIRST MENU
+firstMenu()

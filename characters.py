@@ -3,35 +3,35 @@ class BME:
     def __init__(self):
         self.hp = 100
         self.level = 1
-        self.attack = level * randrange(5,9)
+        self.attack = self.level * randrange(5,9)
         self.diningDollars = 500
 
 class Chemical:
     def __init__(self):
         self.hp = 100
         self.level = 1
-        self.attack = level * randrange(5,9)
+        self.attack = self.level * randrange(5,9)
         self.diningDollars = 500
 
 class CompSci:
     def __init__(self):
         self.hp = 100
         self.level = 1
-        self.attack = level * randrange(5,9)
+        self.attack = self.level * randrange(5,9)
         self.diningDollars = 500
 
 class ECE:
     def __init__(self):
         self.hp = 100
         self.level = 1
-        self.attack = level * randrange(5,9)
+        self.attack = self.level * randrange(5,9)
         self.diningDollars = 500
 
 class Mechanical:
     def __init__(self):
         self.hp = 100
         self.level = 1
-        self.attack = level * randrange(5,9)
+        self.attack = self.level * randrange(5,9)
         self.diningDollars = 500
 
 class MiniBoss:
