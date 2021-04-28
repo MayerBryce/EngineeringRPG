@@ -29,5 +29,8 @@ if selectionNum == '4':
 if selectionNum == '5':
     playerClass = Mechanical()
 
-#FIRST MENU
+#BEGIN GAME SEQUENCE
+#os.system('clear')
 firstMenu()
+#os.system('clear')
+secondMenu()
