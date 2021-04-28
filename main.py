@@ -5,6 +5,9 @@ import random
 import world
 from world import Background
 from world import Ground
+import characters
+from characters import Player
+from characters import Boss
 #maybe look into tkinter GUI
 
 pygame.init()
@@ -21,16 +24,9 @@ COUNT = 0
 displaysurface = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Engineering RPG")
 
-class Player(pygame.sprite.Sprite):
-    def __init__(self):
-        super().__init__()
-
-class Boss(pygame.sprite.Sprite):
-    def __init__(self):
-        super().__init__()
-
 background = Background()
 ground = Ground()
+player = Player()
 
 while True:
        
@@ -50,5 +46,6 @@ while True:
     
     background.render()
     ground.render()
+    displaysurface.blit(player.image, player.rect)
     pygame.display.update()
     FPS_CLOCK.tick(FPS)
