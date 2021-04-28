@@ -10,7 +10,7 @@ class Background(pygame.sprite.Sprite):
         self.bgY = 0
         self.bgX = 0
 
-    def render(self):
+    def render(self,displaysurface):
         displaysurface.blit(self.bgimage, (self.bgX, self.bgY))
 
 class Ground(pygame.sprite.Sprite):
@@ -19,5 +19,5 @@ class Ground(pygame.sprite.Sprite):
         self.image = pygame.image.load("ground.png")
         self.rect = self.image.get_rect(center = (350, 350))
 
-    def render(self):
+    def render(self,displaysurface):
         displaysurface.blit(self.image, (self.rect.x,self.rect.y))

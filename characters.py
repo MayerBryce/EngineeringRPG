@@ -1,30 +1,60 @@
-import pygame
-from pygame.locals import *
-import sys
-import random
-
-class Player(pygame.sprite.Sprite):
+from random import randrange
+class BME:
     def __init__(self):
-        super().__init__()
-        self.image = pygame.image.load("")
-        self.rect = self.image.get_rect()
+        self.hp = 100
+        self.level = 1
+        self.attack = level * randrange(5,9)
+        self.diningDollars = 500
 
-        #Position in the world
-        self.vx = 0
-        self.pos = vec((340,240))
-        self.vel = vec(0,0)
-        self.acc = vec(0,0)
-        self.direction = "RIGHT"
-
-    def move(self):
-        pass
-    def update(self):
-        pass
-    def attack(self):
-        pass
-    def jump(self):
-        pass
-
-class Boss(pygame.sprite.Sprite):
+class Chemical:
     def __init__(self):
-        super().__init__()
+        self.hp = 100
+        self.level = 1
+        self.attack = level * randrange(5,9)
+        self.diningDollars = 500
+
+class CompSci:
+    def __init__(self):
+        self.hp = 100
+        self.level = 1
+        self.attack = level * randrange(5,9)
+        self.diningDollars = 500
+
+class ECE:
+    def __init__(self):
+        self.hp = 100
+        self.level = 1
+        self.attack = level * randrange(5,9)
+        self.diningDollars = 500
+
+class Mechanical:
+    def __init__(self):
+        self.hp = 100
+        self.level = 1
+        self.attack = level * randrange(5,9)
+        self.diningDollars = 500
+
+class MiniBoss:
+    def __init__(self):
+        self.hp = 250
+        self.attack = randrange(0,2)
+
+class Klenke:
+    def __init__(self):
+        self.hp = 500
+        self.attack = randrange(0,5)
+
+class Motai:
+    def __init__(self):
+        self.hp = 500
+        self.attack = randrange(0,5)
+
+class Resler:
+    def __init__(self):
+        self.hp = 500
+        self.attack = randrange(0,5)
+
+class Ghosh:
+    def __init__(self):
+        self.hp = 500
+        self.attack = randrange(0,5)
