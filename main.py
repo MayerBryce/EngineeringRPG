@@ -1,31 +1,30 @@
-import characters
+import os
+import sys
+from characters import *
+from menus import *
 
-print("---------------------------------------------------------------------------------------------------------------------------------------------------------")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|  ______     __   __     ______     __     __   __     ______     ______     ______     __     __   __     ______        ______     ______   ______    |")
-print("| /\\  ___\\   /\\ \"-.\\ \\   /\\  ___\\   /\\ \\   /\\ \"-.\\ \\   /\\  ___\\   /\\  ___\\   /\\  == \\   /\\ \\   /\\ \"-.\\ \\   /\\  ___\\      /\\  == \\   /\\  == \\ /\\  ___\\   |")
-print("| \\ \\  __\\   \\ \\ \\-.  \\  \\ \\ \\__ \\  \\ \\ \\  \\ \\ \\-.  \\  \\ \\  __\\   \\ \\  __\\   \\ \\  __<   \\ \\ \\  \\ \\ \\-.  \\  \\ \\ \\__ \\     \\ \\  __<   \\ \\  _-/ \\ \\ \\__ \\  |")
-print("|  \\ \\_____\\  \\ \\_\\\\\"\\_\\  \\ \\_____\\  \\ \\_\\  \\ \\_\\\\\"\\_\\  \\ \\_____\\  \\ \\_____\\  \\ \\_\\ \\_\\  \\ \\_\\  \\ \\_\\\\\"\\_\\  \\ \\_____\\     \\ \\_\\ \\_\\  \\ \\_\\    \\ \\_____\\ |")
-print("|   \\/_____/   \\/_/ \\/_/   \\/_____/   \\/_/   \\/_/ \\/_/   \\/_____/   \\/_____/   \\/_/ /_/   \\/_/   \\/_/ \\/_/   \\/_____/      \\/_/ /_/   \\/_/     \\/_____/ |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("|                                                                                                                                                       |")
-print("---------------------------------------------------------------------------------------------------------------------------------------------------------")
+#START OF MAIN MENU
+mainMenu()
+selectionNum = input()
+if selectionNum == 2:
+    quit()
+else:
+    #os.system('clear')
+    nameMenu()
+#INPUT PLAYER NAME
+playerName = input()
+
+#PICK YOUR CLASS
+#os.system('clear')
+classMenu()
+selectionNum = input()
+if selectionNum = 1
+    playerClass = BME()
+if selectionNum = 2
+    playerClass = Chemical()
+if selectionNum = 3
+    playerClass = CompSci()
+if selectionNum = 4
+    playerClass = ECE()
+if selectionNum = 5
+    playerClass = Mechanical()
