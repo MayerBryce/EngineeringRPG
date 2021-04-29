@@ -32,5 +32,24 @@ if selectionNum == '5':
 #BEGIN GAME SEQUENCE
 #os.system('clear')
 firstMenu()
+input()
 #os.system('clear')
 secondMenu()
+
+#BEGIN MINI BOSS FIGHT
+annoyingStudent = MiniBoss()
+while annoyingStudent.hp > 0:
+    #os.system('clear')
+    miniBossFight(playerClass.hp,annoyingStudent.hp,playerClass.level)
+    selectionNum = input()
+    if selectionNum == '1':
+        annoyingStudent.hp = annoyingStudent.hp - playerClass.attack
+    playerClass.hp = playerClass.hp - annoyingStudent.attack
+    if playerClass.hp <= 0:
+        #os.system('clear')
+        #lostToMiniBoss()
+        quit()
+playerClass.level += 1
+victoryMiniBoss()
+
+#BEGIN TRANSITION TO BOSS FIGHT
