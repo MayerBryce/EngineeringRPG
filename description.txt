@@ -1,0 +1,6 @@
+For our project we decided to make a text RPG. In our code we split it up into 3 seperate files.
+Our main.py file is where our game is ran and where all of our control flow for the logistics of the game are.
+In the menus.py file we put all of our game screens, fights and transition screens throughtout the game. This file 
+was used to make our game actually look like a game. In the characters.py file we have all of our classes for our characters
+and bosses. In here we have objects to keep trakc of characters hp and attack damages as the game goes on. The game is run
+using python3 in the terminal. 

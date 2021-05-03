@@ -56,6 +56,7 @@ while annoyingStudent.hp > 0:
 playerClass.level += 1
 victoryMiniBoss()
 
+#BEGIN CLEANING JANITOR FIGHT
 cleaningJanitor = MiniBoss()
 while cleaningJanitor.hp > 0:
     #os.system('clear')
@@ -74,6 +75,7 @@ while cleaningJanitor.hp > 0:
 playerClass.level += 1
 victoryMiniBoss()
 
+#BEGIN ACADEMIC ADVISOR FIGHT
 academicAdvisor = MiniBoss()
 while academicAdvisor.hp > 0:
     #os.system('clear')
@@ -93,7 +95,6 @@ playerClass.level += 1
 victoryMiniBoss()
 
 #BEGIN TRANSITION TO BOSS FIGHT
-
 for x in range(1):
     whichBoss = random.randint(1, 4)
     if whichBoss == 1:
@@ -171,4 +172,3 @@ for x in range(1):
                 quit()
         playerClass.level += 1
         victoryFinalBoss()
-
