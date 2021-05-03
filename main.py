@@ -47,7 +47,7 @@ while annoyingStudent.hp > 0:
         annoyingStudent.hp = annoyingStudent.hp - playerClass.attack
     playerClass.hp = playerClass.hp - annoyingStudent.attack
     if selectionNum == '2':
-                finalBoss.hp = finalBoss.hp - playerClass.diningDollars
+                annoyingStudent.hp = annoyingStudent.hp - playerClass.attack * 2
                 playerClass.diningDollars -= 50
     if playerClass.hp <= 0:
         #os.system('clear')
@@ -66,7 +66,7 @@ while cleaningJanitor.hp > 0:
         cleaningJanitor.hp = cleaningJanitor.hp - playerClass.attack
     playerClass.hp = playerClass.hp - cleaningJanitor.attack
     if selectionNum == '2':
-                finalBoss.hp = finalBoss.hp - playerClass.diningDollars
+                cleaningJanitor.hp = cleaningJanitor.hp - playerClass.attack * 2
                 playerClass.diningDollars -= 50
     if playerClass.hp <= 0:
         #os.system('clear')
@@ -85,7 +85,7 @@ while academicAdvisor.hp > 0:
         academicAdvisor.hp = academicAdvisor.hp - playerClass.attack
     playerClass.hp = playerClass.hp - academicAdvisor.attack
     if selectionNum == '2':
-                finalBoss.hp = finalBoss.hp - playerClass.diningDollars
+                MiniBoss.hp = MiniBoss.hp - playerClass.attack * 2
                 playerClass.diningDollars -= 50
     if playerClass.hp <= 0:
         #os.system('clear')
@@ -107,7 +107,7 @@ for x in range(1):
                 finalBoss.hp = finalBoss.hp - playerClass.attack
             playerClass.hp = playerClass.hp - finalBoss.attack
             if selectionNum == '2':
-                finalBoss.hp = finalBoss.hp - playerClass.diningDollars
+                finalBoss.hp = finalBoss.hp - playerClass.attack * 2
                 playerClass.diningDollars -= 50
             if playerClass.hp <= 0:
                 #os.system('clear')
@@ -126,7 +126,7 @@ for x in range(1):
                 finalBoss.hp = finalBoss.hp - playerClass.attack
             playerClass.hp = playerClass.hp - finalBoss.attack
             if selectionNum == '2':
-                finalBoss.hp = finalBoss.hp - playerClass.diningDollars
+                finalBoss.hp = finalBoss.hp - playerClass.attack * 2
                 playerClass.diningDollars -= 50
             if playerClass.hp <= 0:
                 #os.system('clear')
@@ -145,7 +145,7 @@ for x in range(1):
                 finalBoss.hp = finalBoss.hp - playerClass.attack
             playerClass.hp = playerClass.hp - finalBoss.attack
             if selectionNum == '2':
-                finalBoss.hp = finalBoss.hp - playerClass.diningDollars
+                finalBoss.hp = finalBoss.hp - playerClass.attack * 2
                 playerClass.diningDollars -= 50
             if playerClass.hp <= 0:
                 #os.system('clear')
@@ -164,7 +164,7 @@ for x in range(1):
                 finalBoss.hp = finalBoss.hp - playerClass.attack
             playerClass.hp = playerClass.hp - finalBoss.attack
             if selectionNum == '2':
-                finalBoss.hp = finalBoss.hp - playerClass.diningDollars
+                finalBoss.hp = finalBoss.hp - playerClass.attack * 2
                 playerClass.diningDollars -= 50
             if playerClass.hp <= 0:
                 #os.system('clear')
