@@ -40,6 +40,7 @@ input()
 #BEGIN MINI BOSS FIGHT
 #os.system('clear')
 secondMenu()
+
 input()
 #os.system('clear')
 annoyingStudent = MiniBoss()
