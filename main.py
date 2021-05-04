@@ -41,6 +41,8 @@ input()
 annoyingStudent = MiniBoss()
 while annoyingStudent.hp > 0:
     #os.system('clear')
+    playerClass.attack = playerClass.level * randrange(5,9)
+    annoyingStudent.attack = randrange(0,2)
     miniBossFight(playerClass.hp,annoyingStudent.hp,playerClass.level)
     selectionNum = input()
     if selectionNum == '1':
@@ -49,18 +51,24 @@ while annoyingStudent.hp > 0:
     if selectionNum == '2':
                 annoyingStudent.hp = annoyingStudent.hp - playerClass.attack * 2
                 playerClass.diningDollars -= 50
+    #os.system('clear')
+    enemyAttacked()
+    input()
     if playerClass.hp <= 0:
         #os.system('clear')
-        #lostToMiniBoss()
+        lostToMiniBoss()
         quit()
 playerClass.level += 1
 victoryMiniBoss()
+playerClass.hp = 100
 
 #BEGIN CLEANING JANITOR FIGHT
 cleaningJanitor = MiniBoss()
 while cleaningJanitor.hp > 0:
     #os.system('clear')
-    miniBossFight(playerClass.hp,cleaningJanitor.hp,playerClass.level)
+    playerClass.attack = playerClass.level * randrange(5,9)
+    cleaningJanitor.attack = randrange(0,2)
+    miniBossFight2(playerClass.hp,cleaningJanitor.hp,playerClass.level)
     selectionNum = input()
     if selectionNum == '1':
         cleaningJanitor.hp = cleaningJanitor.hp - playerClass.attack
@@ -68,18 +76,24 @@ while cleaningJanitor.hp > 0:
     if selectionNum == '2':
                 cleaningJanitor.hp = cleaningJanitor.hp - playerClass.attack * 2
                 playerClass.diningDollars -= 50
+    #os.system('clear')
+    enemyAttacked()
+    input()
     if playerClass.hp <= 0:
         #os.system('clear')
-        #lostToMiniBoss()
+        lostToMiniBoss()
         quit()
 playerClass.level += 1
 victoryMiniBoss()
+playerClass.hp = 100
 
 #BEGIN ACADEMIC ADVISOR FIGHT
 academicAdvisor = MiniBoss()
 while academicAdvisor.hp > 0:
     #os.system('clear')
-    miniBossFight(playerClass.hp,academicAdvisor.hp,playerClass.level)
+    playerClass.attack = playerClass.level * randrange(5,9)
+    academicAdvisor.attack = randrange(0,2)
+    miniBossFight3(playerClass.hp,academicAdvisor.hp,playerClass.level)
     selectionNum = input()
     if selectionNum == '1':
         academicAdvisor.hp = academicAdvisor.hp - playerClass.attack
@@ -87,12 +101,16 @@ while academicAdvisor.hp > 0:
     if selectionNum == '2':
                 MiniBoss.hp = MiniBoss.hp - playerClass.attack * 2
                 playerClass.diningDollars -= 50
+    #os.system('clear')
+    enemyAttacked()
+    input()
     if playerClass.hp <= 0:
         #os.system('clear')
-        #lostToMiniBoss()
+        lostToMiniBoss()
         quit()
 playerClass.level += 1
 victoryMiniBoss()
+playerClass.hp = 100
 
 #BEGIN TRANSITION TO BOSS FIGHT
 for x in range(1):
@@ -101,7 +119,9 @@ for x in range(1):
         finalBoss = Klenke() 
         while finalBoss.hp > 0:
             #os.system('clear')
-            miniBossFight(playerClass.hp,finalBoss.hp,playerClass.level)
+            playerClass.attack = playerClass.level * randrange(5,9)
+            finalBoss.attack = randrange(0,2)
+            miniBossFight4(playerClass.hp,finalBoss.hp,playerClass.level)
             selectionNum = input()
             if selectionNum == '1':
                 finalBoss.hp = finalBoss.hp - playerClass.attack
@@ -111,8 +131,11 @@ for x in range(1):
                 playerClass.diningDollars -= 50
             if playerClass.hp <= 0:
                 #os.system('clear')
-                #lostToMiniBoss()
+                lostToMiniBoss()
                 quit()
+            #os.system('clear')
+            enemyAttacked()
+            input()
         playerClass.level += 1
         victoryFinalBoss()
 
@@ -120,7 +143,9 @@ for x in range(1):
         finalBoss = Motai() 
         while finalBoss.hp > 0:
             #os.system('clear')
-            miniBossFight(playerClass.hp,finalBoss.hp,playerClass.level)
+            playerClass.attack = playerClass.level * randrange(5,9)
+            finalBoss.attack = randrange(0,2)
+            miniBossFight5(playerClass.hp,finalBoss.hp,playerClass.level)
             selectionNum = input()
             if selectionNum == '1':
                 finalBoss.hp = finalBoss.hp - playerClass.attack
@@ -130,8 +155,11 @@ for x in range(1):
                 playerClass.diningDollars -= 50
             if playerClass.hp <= 0:
                 #os.system('clear')
-                #lostToMiniBoss()
+                lostToMiniBoss()
                 quit()
+            #os.system('clear')
+            enemyAttacked()
+            input()
         playerClass.level += 1
         victoryFinalBoss()
     
@@ -139,7 +167,9 @@ for x in range(1):
         finalBoss = Resler() 
         while finalBoss.hp > 0:
             #os.system('clear')
-            miniBossFight(playerClass.hp,finalBoss.hp,playerClass.level)
+            playerClass.attack = playerClass.level * randrange(5,9)
+            finalBoss.attack = randrange(0,2)
+            miniBossFight6(playerClass.hp,finalBoss.hp,playerClass.level)
             selectionNum = input()
             if selectionNum == '1':
                 finalBoss.hp = finalBoss.hp - playerClass.attack
@@ -149,16 +179,21 @@ for x in range(1):
                 playerClass.diningDollars -= 50
             if playerClass.hp <= 0:
                 #os.system('clear')
-                #lostToMiniBoss()
+                lostToMiniBoss()
                 quit()
+            #os.system('clear')
+            enemyAttacked()
+            input()
         playerClass.level += 1
         victoryFinalBoss()
     
-    else whichBoss == 4:
+    elif whichBoss == 4:
         finalBoss = Ghosh() 
         while finalBoss.hp > 0:
             #os.system('clear')
-            miniBossFight(playerClass.hp,finalBoss.hp,playerClass.level)
+            playerClass.attack = playerClass.level * randrange(5,9)
+            finalBoss.attack = randrange(0,2)
+            miniBossFight7(playerClass.hp,finalBoss.hp,playerClass.level)
             selectionNum = input()
             if selectionNum == '1':
                 finalBoss.hp = finalBoss.hp - playerClass.attack
@@ -168,7 +203,10 @@ for x in range(1):
                 playerClass.diningDollars -= 50
             if playerClass.hp <= 0:
                 #os.system('clear')
-                #lostToMiniBoss()
+                lostToMiniBoss()
                 quit()
+            #os.system('clear')
+            enemyAttacked()
+            input()
         playerClass.level += 1
         victoryFinalBoss()
