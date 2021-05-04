@@ -37,12 +37,16 @@ input()
 #os.system('clear')
 
 
-#BEGIN MINI BOSS FIGHT          (maybe??) change naming conventions (academic advisor is the mini boss) OR we can have every enemy encounter except for the final boss be considered a mini boss; would be easier than changing the name of each variables
+#BEGIN MINI BOSS FIGHT
+#os.system('clear')
+secondMenu()
+input()
+#os.system('clear')
 annoyingStudent = MiniBoss()
 while annoyingStudent.hp > 0:
     #os.system('clear')
     playerClass.attack = playerClass.level * randrange(5,9)
-    annoyingStudent.attack = randrange(0,2)
+    annoyingStudent.attack = randrange(1,5)
     miniBossFight(playerClass.hp,annoyingStudent.hp,playerClass.level)
     selectionNum = input()
     if selectionNum == '1':
@@ -63,11 +67,15 @@ victoryMiniBoss()
 playerClass.hp = 100
 
 #BEGIN CLEANING JANITOR FIGHT
+#os.system('clear')
+thirdMenu()
+input()
+#os.system('clear')
 cleaningJanitor = MiniBoss()
 while cleaningJanitor.hp > 0:
     #os.system('clear')
     playerClass.attack = playerClass.level * randrange(5,9)
-    cleaningJanitor.attack = randrange(0,2)
+    cleaningJanitor.attack = randrange(1,5)
     miniBossFight2(playerClass.hp,cleaningJanitor.hp,playerClass.level)
     selectionNum = input()
     if selectionNum == '1':
@@ -88,11 +96,15 @@ victoryMiniBoss()
 playerClass.hp = 100
 
 #BEGIN ACADEMIC ADVISOR FIGHT
+#os.system('clear')
+fourthMenu()
+input()
+#os.system('clear')
 academicAdvisor = MiniBoss()
 while academicAdvisor.hp > 0:
     #os.system('clear')
     playerClass.attack = playerClass.level * randrange(5,9)
-    academicAdvisor.attack = randrange(0,2)
+    academicAdvisor.attack = randrange(1,5)
     miniBossFight3(playerClass.hp,academicAdvisor.hp,playerClass.level)
     selectionNum = input()
     if selectionNum == '1':
@@ -113,6 +125,10 @@ victoryMiniBoss()
 playerClass.hp = 100
 
 #BEGIN TRANSITION TO BOSS FIGHT
+#os.system('clear')
+fifthMenu()
+input()
+#os.system('clear')
 for x in range(1):
     whichBoss = random.randint(1, 4)
     if whichBoss == 1:
@@ -120,7 +136,7 @@ for x in range(1):
         while finalBoss.hp > 0:
             #os.system('clear')
             playerClass.attack = playerClass.level * randrange(5,9)
-            finalBoss.attack = randrange(0,2)
+            finalBoss.attack = randrange(1,5)
             miniBossFight4(playerClass.hp,finalBoss.hp,playerClass.level)
             selectionNum = input()
             if selectionNum == '1':
@@ -144,7 +160,7 @@ for x in range(1):
         while finalBoss.hp > 0:
             #os.system('clear')
             playerClass.attack = playerClass.level * randrange(5,9)
-            finalBoss.attack = randrange(0,2)
+            finalBoss.attack = randrange(1,5)
             miniBossFight5(playerClass.hp,finalBoss.hp,playerClass.level)
             selectionNum = input()
             if selectionNum == '1':
@@ -168,7 +184,7 @@ for x in range(1):
         while finalBoss.hp > 0:
             #os.system('clear')
             playerClass.attack = playerClass.level * randrange(5,9)
-            finalBoss.attack = randrange(0,2)
+            finalBoss.attack = randrange(1,5)
             miniBossFight6(playerClass.hp,finalBoss.hp,playerClass.level)
             selectionNum = input()
             if selectionNum == '1':
@@ -192,7 +208,7 @@ for x in range(1):
         while finalBoss.hp > 0:
             #os.system('clear')
             playerClass.attack = playerClass.level * randrange(5,9)
-            finalBoss.attack = randrange(0,2)
+            finalBoss.attack = randrange(1,5)
             miniBossFight7(playerClass.hp,finalBoss.hp,playerClass.level)
             selectionNum = input()
             if selectionNum == '1':
