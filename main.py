@@ -1,3 +1,5 @@
+#IMPLEMENTATION OF GAME
+
 import os
 import sys
 import random
