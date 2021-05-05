@@ -158,7 +158,7 @@ for x in range(1):
             enemyAttacked()
             input()
         playerClass.level += 1
-        victoryMiniBoss()
+        victoryRoyale()
         input()
 
     elif whichBoss == 2:
@@ -183,7 +183,7 @@ for x in range(1):
             enemyAttacked()
             input()
         playerClass.level += 1
-        victoryMiniBoss()
+        victoryRoyale()
         input()
 
     elif whichBoss == 3:
@@ -208,7 +208,7 @@ for x in range(1):
             enemyAttacked()
             input()
         playerClass.level += 1
-        victoryMiniBoss()
+        victoryRoyale()
         input()
 
     elif whichBoss == 4:
@@ -233,5 +233,5 @@ for x in range(1):
             enemyAttacked()
             input()
         playerClass.level += 1
-        victoryMiniBoss()
+        victoryRoyale()
         input()
